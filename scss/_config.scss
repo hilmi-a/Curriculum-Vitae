@@ -2,7 +2,7 @@ $primary-color: #444;
 $secondary-color: #00d1cd;
 $show-home-img: true;
 $home-img: url(../img/background.jpg);
-$background-opacity: .9;
+$background-opacity: .7;
 
 @mixin easeOut {
     transition: all 1.5s ease-out;
@@ -28,6 +28,16 @@ $background-opacity: .9;
         
     }
 }
+
+//function set text color
+@function set-text-color($color){
+    @if (lightness($color) > 40){
+        @return #000;
+    }@else {
+        @return #fff;
+    }
+}
+
 
 // media query mixin
 //500px or less

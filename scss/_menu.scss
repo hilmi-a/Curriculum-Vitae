@@ -11,7 +11,7 @@
         width: 28px;
         height: 3px;
         margin: 0 0 5px 0;
-        background: #fff;
+        background: set-text-color($primary-color);
         @include easeOut;
     }
 
@@ -82,6 +82,7 @@
 
     //branding side
     &-branding {
+        
         background: $primary-color;
         transform: translate3d(0, 100%, 0);
         @include easeOut;
@@ -92,6 +93,7 @@
         }
 
         .portrait {
+            opacity: 1;
             width: 250px;
             height: 250px;
             background: url("../img/portrait.png");
@@ -105,6 +107,7 @@
     .nav-item {
         transform: translate3d(600px, 0, 0);
         @include easeOut;
+        
 
         &.show {
             //slide in from right
@@ -124,6 +127,7 @@
         padding: 1rem 0;
         font-weight: 300;
         text-decoration: none;
+        color: set-text-color($primary-color);
         @include easeOut;
 
         &:hover {
