@@ -1,10 +1,14 @@
 //widescreen
-@include mediaXL {}
+@include mediaXL {
+    body .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
 //Desktop
 @include mediaLg {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
+    body .projects {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -52,14 +56,17 @@
         }
     }
 
-    .about-info {
-        grid-template-areas:
-            'bioimage'
-            'bio'
-            'job-1'
-            'job-2'
-            'job-3';
+    //need to use parent to avoid overriden by the 
+    //original style
+    body .about-info {
         grid-template-columns: 1fr;
+        grid-template-areas:
+            "bioimage"
+            "bio"
+            "job1"
+            "job2"
+            "job3";
+        
 
 
     }
@@ -68,7 +75,7 @@
         margin-top: 20px;
     }
 
-    .projects {
+    body .projects {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -85,7 +92,7 @@
     }
 
 
-    .projects {
+    body .projects {
         grid-template-columns: 1fr;
     }
 }
