@@ -118,6 +118,9 @@ main{
     background: lighten($primary-color, 5);
     padding: .5rem;
     border-bottom: 5px solid $secondary-color;
+    h3 {
+        border-bottom: solid $secondary-color 3px;
+    }
 }
 
 //work page
@@ -149,7 +152,7 @@ main{
     margin-top: 1rem;
 
     div {
-        font-size: 2rem;
+        font-size: 1.5rem;
         border: 3px solid #fff;
         padding: 1.5rem 2.5rem;
         margin-bottom: 3rem;

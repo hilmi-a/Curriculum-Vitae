@@ -243,6 +243,8 @@ main {
   background: #515151;
   padding: .5rem;
   border-bottom: 5px solid #00d1cd; }
+  .job h3 {
+    border-bottom: solid #00d1cd 3px; }
 
 .projects {
   display: grid;
@@ -264,7 +266,7 @@ main {
   align-items: center;
   margin-top: 1rem; }
   .boxes div {
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 3px solid #fff;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
