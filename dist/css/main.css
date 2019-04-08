@@ -250,7 +250,8 @@ main {
   grid-template-columns: repeat(3, 1fr); }
   .projects img {
     width: 100%;
-    border: 3px #fff solid; }
+    min-height: 200px;
+    border: 3px #00d1cd solid; }
     .projects img:hover {
       opacity: .5;
       border-color: #00d1cd;
@@ -274,6 +275,15 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+
+.project-desc {
+  padding: 1rem 1rem;
+  text-align: justify;
+  border-left: solid #00d1cd 3px;
+  border-bottom: solid #00d1cd 3px;
+  margin: .5rem auto;
+  background: #3f3f3f;
+  min-height: 150px; }
 
 .btn, .btn-light, .btn-dark {
   display: block;

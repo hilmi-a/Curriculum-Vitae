@@ -128,7 +128,8 @@ main{
 
     img {
         width: 100%;
-        border: 3px #fff solid;
+        min-height: 200px;
+        border: 3px $secondary-color solid;
 
         &:hover {
             opacity: .5;
@@ -165,6 +166,19 @@ main{
         }
     }
 }
+
+
+
+.project-desc {
+    padding: 1rem 1rem;
+    text-align: justify;
+    border-left: solid $secondary-color 3px;
+    border-bottom: solid $secondary-color 3px;
+    margin: .5rem auto;
+    background: darken($primary-color, 2);
+    min-height: 150px;
+}
+
 
 // button style
 .btn {
